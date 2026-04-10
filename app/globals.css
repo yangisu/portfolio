@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07050d;
+  --foreground: #f6f3ff;
+  --muted: #9f95ba;
+  --card: #121021;
+  --card-border: #2a2440;
+  --accent: #9c6dff;
+  --accent-strong: #b592ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+  background-image: radial-gradient(
+      circle at 15% -15%,
+      rgba(156, 109, 255, 0.24),
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 10%, rgba(89, 68, 147, 0.25), transparent 30%);
+}
+
+::selection {
+  background: rgba(156, 109, 255, 0.45);
+  color: #fff;
+}
+
+.section-fade {
+  animation: fadeUp 0.8s ease both;
+}
+
+.section-fade-delay {
+  animation: fadeUp 0.95s ease both;
+  animation-delay: 0.12s;
+}
+
+.glass-card {
+  background: linear-gradient(150deg, rgba(21, 16, 39, 0.96), rgba(12, 9, 24, 0.86));
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+}
+
+.accent-ring {
+  box-shadow: 0 0 0 1px rgba(156, 109, 255, 0.26),
+    0 16px 36px rgba(9, 4, 21, 0.56);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
