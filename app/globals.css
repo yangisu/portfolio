@@ -1,7 +1,7 @@
 ﻿@import "tailwindcss";
 
 :root {
-  --background: #f6f8f2;
+  --background: #ffffff;
   --foreground: #112218;
   --muted: #4b6054;
   --card: #0d1b13;
@@ -25,9 +25,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-manrope), sans-serif;
   background-image:
-    radial-gradient(circle at 8% -6%, rgba(106, 212, 143, 0.2), transparent 34%),
-    radial-gradient(circle at 92% -4%, rgba(107, 143, 69, 0.25), transparent 30%),
-    linear-gradient(180deg, #ffffff 0%, #f4f8f1 42%, #f7f9f4 100%);
+    radial-gradient(circle at 8% -6%, rgba(106, 212, 143, 0.14), transparent 34%),
+    radial-gradient(circle at 92% -4%, rgba(107, 143, 69, 0.16), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }
 
 ::selection {
@@ -40,8 +40,8 @@ body {
 }
 
 .glass-card {
-  background: linear-gradient(170deg, #f3fff6 0%, #eaf8ee 100%);
-  border: 1px solid #9ecab0;
+  background: linear-gradient(170deg, #e1f2e6 0%, #d2e9da 100%);
+  border: 1px solid #7eaf92;
   backdrop-filter: blur(8px);
 }
 
