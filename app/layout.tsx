@@ -16,6 +16,31 @@ export const metadata: Metadata = {
   title: "양이수 (Isu Yang) | AI Engineer Portfolio",
   description:
     "AI developer portfolio focused on LLM products, practical engineering, and measurable outcomes.",
+  metadataBase: new URL("https://portfolio-tau-black-70.vercel.app"),
+  openGraph: {
+    title: "양이수 (Isu Yang) | AI Engineer Portfolio",
+    description:
+      "AI developer portfolio focused on LLM products, practical engineering, and measurable outcomes.",
+    url: "https://portfolio-tau-black-70.vercel.app",
+    siteName: "Isu Yang Portfolio",
+    images: [
+      {
+        url: "/opengraph-image?v=3",
+        width: 1200,
+        height: 630,
+        alt: "Isu Yang AI Engineer Portfolio Preview",
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "양이수 (Isu Yang) | AI Engineer Portfolio",
+    description:
+      "AI developer portfolio focused on LLM products, practical engineering, and measurable outcomes.",
+    images: ["/opengraph-image?v=3"],
+  },
 };
 
 export default function RootLayout({
