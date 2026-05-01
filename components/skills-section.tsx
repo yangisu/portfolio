@@ -1,4 +1,4 @@
-import { SectionShell } from "./section-shell";
+﻿import { SectionShell } from "./section-shell";
 
 type SkillGroup = {
   title: string;
@@ -14,8 +14,8 @@ export function SkillsSection({ groups }: SkillsSectionProps) {
     <SectionShell
       id="skills"
       eyebrow="Skills"
-      title="Frontend, Tools, and Workflow"
-      description="A practical stack focused on maintainability, speed, and product impact."
+      title="AI, Backend, and Product Delivery"
+      description="A practical stack for building, evaluating, and shipping real-world AI systems."
     >
       <div className="grid gap-4 md:grid-cols-3">
         {groups.map((group) => (
@@ -23,10 +23,7 @@ export function SkillsSection({ groups }: SkillsSectionProps) {
             <h3 className="mb-3 text-base font-semibold text-white">{group.title}</h3>
             <div className="flex flex-wrap gap-2">
               {group.skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full border border-[#3f365c] bg-[#161129] px-3 py-1.5 text-xs text-[#d5cfee]"
-                >
+                <span key={skill} className="theme-chip rounded-full px-3 py-1.5 text-xs">
                   {skill}
                 </span>
               ))}

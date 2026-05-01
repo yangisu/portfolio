@@ -1,9 +1,9 @@
-import { SectionShell } from "./section-shell";
+﻿import { SectionShell } from "./section-shell";
 
 type ContactSectionProps = {
-  email: string;
-  github: string;
-  linkedin: string;
+  email?: string;
+  github?: string;
+  linkedin?: string;
 };
 
 type ContactCardProps = {
@@ -16,11 +16,11 @@ function ContactCard({ label, value, href }: ContactCardProps) {
   return (
     <a
       href={href}
-      className="glass-card rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-[#4c416f]"
+      className="glass-card rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-[#3e5f52]"
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noreferrer" : undefined}
     >
-      <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#9c6dff]">
+      <p className="font-mono text-xs uppercase tracking-[0.18em] theme-eyebrow">
         {label}
       </p>
       <p className="mt-2 break-all text-sm text-white md:text-base">{value}</p>
@@ -33,14 +33,15 @@ export function ContactSection({ email, github, linkedin }: ContactSectionProps)
     <SectionShell
       id="contact"
       eyebrow="Contact"
-      title="Let&apos;s Build Something Meaningful"
-      description="If you are hiring or planning a product project, I would love to connect."
+      title="Let's Build AI Products That Matter"
+      description="If you are hiring an AI developer or planning an AI feature, I would love to connect."
     >
       <div className="grid gap-4 md:grid-cols-3">
-        <ContactCard label="Email" value={email} href={`mailto:${email}`} />
-        <ContactCard label="GitHub" value={github} href={github} />
-        <ContactCard label="LinkedIn" value={linkedin} href={linkedin} />
+        {email ? <ContactCard label="Email" value={email} href={`mailto:${email}`} /> : null}
+        {github ? <ContactCard label="GitHub" value={github} href={github} /> : null}
+        {linkedin ? <ContactCard label="LinkedIn" value={linkedin} href={linkedin} /> : null}
       </div>
     </SectionShell>
   );
 }
+

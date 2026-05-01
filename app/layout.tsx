@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { JetBrains_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 
@@ -13,9 +13,9 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "[본인 이름] | Frontend Developer Portfolio",
+  title: "[Your Name] | AI Developer Portfolio",
   description:
-    "Minimal, modern developer portfolio built with Next.js and Tailwind CSS.",
+    "AI developer portfolio focused on LLM products, practical engineering, and measurable outcomes.",
 };
 
 export default function RootLayout({
