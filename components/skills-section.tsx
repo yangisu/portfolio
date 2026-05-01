@@ -20,7 +20,7 @@ export function SkillsSection({ groups }: SkillsSectionProps) {
       <div className="grid gap-4 md:grid-cols-3">
         {groups.map((group) => (
           <article key={group.title} className="glass-card rounded-2xl p-5">
-            <h3 className="mb-3 text-base font-semibold text-white">{group.title}</h3>
+            <h3 className="mb-3 text-base font-semibold text-[#143325]">{group.title}</h3>
             <div className="flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <span key={skill} className="theme-chip rounded-full px-3 py-1.5 text-xs">
@@ -34,3 +34,4 @@ export function SkillsSection({ groups }: SkillsSectionProps) {
     </SectionShell>
   );
 }
+

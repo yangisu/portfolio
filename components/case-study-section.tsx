@@ -42,7 +42,7 @@ export function CaseStudySection({
           </div>
         </div>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-[#2b4037] bg-[#0d1511] p-5">
+          <div className="rounded-2xl border border-[#9ecab0] bg-[#f3fff6] p-5">
             <p className="mb-3 font-mono text-xs uppercase tracking-[0.16em] theme-eyebrow">
               Approach
             </p>
@@ -52,7 +52,7 @@ export function CaseStudySection({
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl border border-[#2b4037] bg-[#0d1511] p-5">
+          <div className="rounded-2xl border border-[#9ecab0] bg-[#f3fff6] p-5">
             <p className="mb-3 font-mono text-xs uppercase tracking-[0.16em] theme-eyebrow">
               Outcome
             </p>
@@ -74,3 +74,4 @@ export function CaseStudySection({
     </SectionShell>
   );
 }
+

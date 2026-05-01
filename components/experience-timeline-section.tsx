@@ -29,10 +29,10 @@ export function ExperienceTimelineSection({
               <p className="font-mono text-xs uppercase tracking-[0.14em] theme-eyebrow">
                 {item.period}
               </p>
-              <h3 className="mt-2 text-base font-semibold text-white">
+              <h3 className="mt-2 text-base font-semibold text-[#143325]">
                 {item.title}
               </h3>
-              <p className="text-sm text-[#d5dfd7]">{item.company}</p>
+              <p className="text-sm text-[#2d4638]">{item.company}</p>
               <p className="mt-3 text-sm leading-relaxed theme-text-muted">
                 {item.summary}
               </p>
@@ -43,3 +43,4 @@ export function ExperienceTimelineSection({
     </SectionShell>
   );
 }
+

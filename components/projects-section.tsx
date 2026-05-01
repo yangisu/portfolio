@@ -19,7 +19,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             key={project.title}
             className="glass-card group rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-[#3e5f52]"
           >
-            <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+            <h3 className="text-lg font-semibold text-[#143325]">{project.title}</h3>
             <p className="mt-3 text-sm leading-relaxed theme-text-muted">
               {project.description}
             </p>
@@ -58,4 +58,5 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
     </SectionShell>
   );
 }
+
 

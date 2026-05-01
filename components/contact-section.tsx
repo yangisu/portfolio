@@ -9,10 +9,10 @@ export function ContactSection({ email, github, linkedin }: ContactSectionProps)
     <section id="contact" className="section-fade scroll-mt-24">
       <div className="contact-stage rounded-[34px] p-6 md:p-10">
         <div className="mb-10 max-w-3xl">
-          <p className="mb-3 font-mono text-xs uppercase tracking-[0.28em] text-[#8effb7]">
+          <p className="mb-3 font-mono text-xs uppercase tracking-[0.28em] text-[#1a7a47]">
             Contact
           </p>
-          <h2 className="text-3xl font-semibold tracking-tight text-white md:text-6xl">
+          <h2 className="text-3xl font-semibold tracking-tight text-[#12271c] md:text-6xl">
             새로운 소통과 협업에
             <br />
             항상 열려 있습니다.
@@ -25,10 +25,10 @@ export function ContactSection({ email, github, linkedin }: ContactSectionProps)
               {email ? (
                 <a
                   href={`mailto:${email}`}
-                  className="block rounded-2xl border border-[#4f7f64] bg-[#13261c] p-4 transition hover:border-[#8effb7]"
+                  className="block rounded-2xl border border-[#9ac8aa] bg-[#f4fff7] p-4 transition hover:border-[#48a86f]"
                 >
-                  <p className="text-xs uppercase tracking-[0.16em] text-[#99efbb]">Email</p>
-                  <p className="mt-2 break-all text-base text-white">{email}</p>
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#237a4c]">Email</p>
+                  <p className="mt-2 break-all text-base text-[#143325]">{email}</p>
                 </a>
               ) : null}
               {github ? (
@@ -36,10 +36,10 @@ export function ContactSection({ email, github, linkedin }: ContactSectionProps)
                   href={github}
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-2xl border border-[#4f7f64] bg-[#13261c] p-4 transition hover:border-[#8effb7]"
+                  className="block rounded-2xl border border-[#9ac8aa] bg-[#f4fff7] p-4 transition hover:border-[#48a86f]"
                 >
-                  <p className="text-xs uppercase tracking-[0.16em] text-[#99efbb]">GitHub</p>
-                  <p className="mt-2 break-all text-base text-white">{github}</p>
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#237a4c]">GitHub</p>
+                  <p className="mt-2 break-all text-base text-[#143325]">{github}</p>
                 </a>
               ) : null}
               {linkedin ? (
@@ -47,27 +47,27 @@ export function ContactSection({ email, github, linkedin }: ContactSectionProps)
                   href={linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-2xl border border-[#4f7f64] bg-[#13261c] p-4 transition hover:border-[#8effb7]"
+                  className="block rounded-2xl border border-[#9ac8aa] bg-[#f4fff7] p-4 transition hover:border-[#48a86f]"
                 >
-                  <p className="text-xs uppercase tracking-[0.16em] text-[#99efbb]">LinkedIn</p>
-                  <p className="mt-2 break-all text-base text-white">{linkedin}</p>
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#237a4c]">LinkedIn</p>
+                  <p className="mt-2 break-all text-base text-[#143325]">{linkedin}</p>
                 </a>
               ) : null}
             </div>
 
-            <form className="rounded-2xl border border-[#446e57] bg-[#112218] p-5 md:p-6">
+            <form className="rounded-2xl border border-[#97c6a8] bg-[#f7fff9] p-5 md:p-6">
               <div className="grid gap-4 md:grid-cols-2">
-                <label className="text-sm font-medium text-[#c9f4d6]">
+                <label className="text-sm font-medium text-[#1e4a34]">
                   이름
                   <input className="contact-input mt-2" placeholder="홍길동" />
                 </label>
-                <label className="text-sm font-medium text-[#c9f4d6]">
+                <label className="text-sm font-medium text-[#1e4a34]">
                   이메일
                   <input className="contact-input mt-2" placeholder="email@example.com" />
                 </label>
               </div>
 
-              <label className="mt-4 block text-sm font-medium text-[#c9f4d6]">
+              <label className="mt-4 block text-sm font-medium text-[#1e4a34]">
                 메시지
                 <textarea
                   className="contact-input mt-2 min-h-44 resize-y"

@@ -22,7 +22,7 @@ export function AboutSection({
     >
       <div className="grid gap-4 md:grid-cols-3">
         <div className="glass-card rounded-2xl p-5">
-          <h3 className="mb-3 text-base font-semibold text-white">Work Style</h3>
+          <h3 className="mb-3 text-base font-semibold text-[#143325]">Work Style</h3>
           <ul className="space-y-2 text-sm theme-text-muted">
             {workStyle.map((item) => (
               <li key={item}>{item}</li>
@@ -30,7 +30,7 @@ export function AboutSection({
           </ul>
         </div>
         <div className="glass-card rounded-2xl p-5">
-          <h3 className="mb-3 text-base font-semibold text-white">Strengths</h3>
+          <h3 className="mb-3 text-base font-semibold text-[#143325]">Strengths</h3>
           <ul className="space-y-2 text-sm theme-text-muted">
             {strengths.map((item) => (
               <li key={item}>{item}</li>
@@ -38,7 +38,7 @@ export function AboutSection({
           </ul>
         </div>
         <div className="glass-card rounded-2xl p-5">
-          <h3 className="mb-3 text-base font-semibold text-white">Values</h3>
+          <h3 className="mb-3 text-base font-semibold text-[#143325]">Values</h3>
           <div className="flex flex-wrap gap-2">
             {values.map((value) => (
               <span key={value} className="theme-chip rounded-full px-3 py-1.5 text-xs">
