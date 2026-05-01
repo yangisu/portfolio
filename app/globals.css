@@ -1,15 +1,16 @@
 ﻿@import "tailwindcss";
 
 :root {
-  --background: #070a08;
-  --background-soft: #0c120f;
-  --foreground: #f4f5ef;
-  --muted: #a8b3ab;
-  --card: #101713;
-  --card-border: #293a31;
-  --accent: #8bcf9d;
-  --accent-strong: #c6f2d2;
-  --ivory: #f2efe7;
+  --background: #f6f8f2;
+  --foreground: #112218;
+  --muted: #4b6054;
+  --card: #0d1b13;
+  --card-border: #2d4a3c;
+  --accent: #2f9e5b;
+  --accent-strong: #6ad48f;
+  --accent-olive: #6b8f45;
+  --accent-deep: #0f5a34;
+  --ivory: #ffffff;
 }
 
 @theme inline {
@@ -24,14 +25,14 @@ body {
   color: var(--foreground);
   font-family: var(--font-manrope), sans-serif;
   background-image:
-    radial-gradient(circle at 10% -10%, rgba(139, 207, 157, 0.12), transparent 34%),
-    radial-gradient(circle at 90% -8%, rgba(67, 103, 78, 0.2), transparent 32%),
-    linear-gradient(180deg, #080d0a 0%, #070a08 100%);
+    radial-gradient(circle at 8% -6%, rgba(106, 212, 143, 0.2), transparent 34%),
+    radial-gradient(circle at 92% -4%, rgba(107, 143, 69, 0.25), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #f4f8f1 42%, #f7f9f4 100%);
 }
 
 ::selection {
-  background: rgba(139, 207, 157, 0.4);
-  color: #07100b;
+  background: rgba(47, 158, 91, 0.28);
+  color: #0b1b12;
 }
 
 .section-fade {
@@ -39,17 +40,21 @@ body {
 }
 
 .glass-card {
-  background: linear-gradient(170deg, rgba(20, 28, 24, 0.92), rgba(11, 17, 14, 0.92));
+  background: linear-gradient(170deg, #0f1f16 0%, #0b1611 100%);
   border: 1px solid var(--card-border);
   backdrop-filter: blur(8px);
 }
 
 .accent-ring {
-  box-shadow: 0 0 0 1px rgba(139, 207, 157, 0.18), 0 14px 36px rgba(2, 6, 4, 0.5);
+  box-shadow: 0 0 0 1px rgba(47, 158, 91, 0.35), 0 14px 30px rgba(15, 35, 24, 0.18);
+}
+
+.theme-heading {
+  color: #112218;
 }
 
 .theme-eyebrow {
-  color: var(--accent-strong);
+  color: var(--accent-deep);
 }
 
 .theme-text-muted {
@@ -57,25 +62,25 @@ body {
 }
 
 .theme-chip {
-  border: 1px solid rgba(139, 207, 157, 0.3);
-  background: rgba(16, 26, 21, 0.95);
-  color: #d7e5dc;
+  border: 1px solid rgba(106, 212, 143, 0.55);
+  background: rgba(18, 44, 30, 0.96);
+  color: #ddf7e7;
 }
 
 .theme-outline-btn {
-  border: 1px solid rgba(139, 207, 157, 0.38);
-  color: #e6ede8;
-  background: rgba(8, 14, 11, 0.72);
+  border: 1px solid var(--accent);
+  color: #124328;
+  background: #ffffff;
 }
 
 .theme-outline-btn:hover {
-  border-color: var(--accent-strong);
-  color: #ffffff;
+  background: #e8f8ee;
+  color: #0d3a23;
 }
 
 .theme-solid-btn {
-  background: linear-gradient(135deg, #b9eed0 0%, #8bcf9d 100%);
-  color: #0a130f;
+  background: linear-gradient(135deg, var(--accent-olive) 0%, var(--accent) 45%, var(--accent-strong) 100%);
+  color: #062212;
 }
 
 .theme-solid-btn:hover {
@@ -83,17 +88,17 @@ body {
 }
 
 .top-shell {
-  border: 1px solid rgba(194, 204, 197, 0.22);
-  background: rgba(11, 15, 13, 0.88);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(20, 54, 34, 0.16);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 26px rgba(19, 45, 30, 0.08);
 }
 
 .nav-link {
-  color: #d8e2da;
+  color: #1f3b2d;
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #0f5a34;
 }
 
 .hero-grid {
@@ -105,33 +110,39 @@ body {
   position: absolute;
   inset: 14% 0 auto 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(139, 207, 157, 0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(47, 158, 91, 0.45), transparent);
   pointer-events: none;
 }
 
+.contact-stage {
+  border: 1px solid #2a4b3c;
+  background: linear-gradient(165deg, #07140e 0%, #091d14 48%, #0b2418 100%);
+  box-shadow: 0 22px 44px rgba(10, 33, 22, 0.28);
+}
+
 .contact-panel {
-  border: 1px solid rgba(49, 70, 59, 0.95);
-  background: linear-gradient(165deg, rgba(10, 16, 13, 0.98), rgba(6, 11, 9, 0.98));
+  border: 1px solid rgba(77, 122, 96, 0.8);
+  background: linear-gradient(165deg, rgba(11, 25, 18, 0.97), rgba(8, 19, 13, 0.97));
 }
 
 .contact-input {
   width: 100%;
   border-radius: 16px;
-  border: 1px solid rgba(55, 81, 68, 0.88);
-  background: rgba(18, 30, 24, 0.9);
-  color: #f3f6f3;
+  border: 1px solid rgba(87, 141, 111, 0.88);
+  background: rgba(19, 40, 28, 0.92);
+  color: #f5fbf7;
   padding: 0.9rem 1rem;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-input::placeholder {
-  color: #7f9588;
+  color: #8eb49c;
 }
 
 .contact-input:focus {
-  border-color: #aee8c0;
-  box-shadow: 0 0 0 3px rgba(139, 207, 157, 0.18);
+  border-color: #8effb7;
+  box-shadow: 0 0 0 3px rgba(106, 212, 143, 0.25);
 }
 
 @keyframes fadeUp {

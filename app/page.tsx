@@ -20,10 +20,10 @@ export default function Home() {
   const hasContact = Boolean(contact?.email || contact?.github || contact?.linkedin);
 
   return (
-    <div className="relative flex min-h-screen flex-col overflow-x-clip bg-[#070a08]">
+    <div className="relative flex min-h-screen flex-col overflow-x-clip bg-[var(--background)]">
       <header className="sticky top-0 z-20 px-4 pt-4 md:px-8">
         <nav className="top-shell mx-auto flex w-full max-w-6xl items-center justify-between rounded-full px-4 py-3 md:px-6">
-          <a href="#top" className="font-semibold tracking-tight text-[var(--ivory)] md:text-lg">
+          <a href="#top" className="font-semibold tracking-tight text-[#163326] md:text-lg">
             YANGISU.
           </a>
           <div className="hidden items-center gap-7 text-sm font-medium md:flex">

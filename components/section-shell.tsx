@@ -21,7 +21,7 @@ export function SectionShell({
         <p className="mb-2 font-mono text-xs uppercase tracking-[0.28em] theme-eyebrow">
           {eyebrow}
         </p>
-        <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+        <h2 className="theme-heading text-3xl font-semibold tracking-tight md:text-4xl">
           {title}
         </h2>
         <p className="mt-3 text-sm leading-relaxed theme-text-muted md:text-base">
