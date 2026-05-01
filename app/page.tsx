@@ -20,39 +20,23 @@ export default function Home() {
   const hasContact = Boolean(contact?.email || contact?.github || contact?.linkedin);
 
   return (
-    <div className="relative flex min-h-screen flex-col overflow-x-clip bg-[#080b0a]">
-      <div className="pointer-events-none absolute inset-0 opacity-75">
-        <div className="absolute left-[-120px] top-[-140px] h-96 w-96 rounded-full bg-[radial-gradient(circle,rgba(127,181,143,0.24),transparent_70%)]" />
-        <div className="absolute right-[-120px] top-[22%] h-96 w-96 rounded-full bg-[radial-gradient(circle,rgba(54,88,68,0.2),transparent_70%)]" />
-      </div>
-
-      <header className="sticky top-0 z-20 border-b border-[#213229]/75 bg-[#09100d]/85 backdrop-blur">
-        <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-10">
-          <a
-            href="#top"
-            className="font-mono text-xs uppercase tracking-[0.2em] theme-eyebrow"
-          >
-            AI Portfolio
+    <div className="relative flex min-h-screen flex-col overflow-x-clip bg-[#070a08]">
+      <header className="sticky top-0 z-20 px-4 pt-4 md:px-8">
+        <nav className="top-shell mx-auto flex w-full max-w-6xl items-center justify-between rounded-full px-4 py-3 md:px-6">
+          <a href="#top" className="font-semibold tracking-tight text-[var(--ivory)] md:text-lg">
+            YANGISU.
           </a>
-          <div className="hidden items-center gap-6 text-sm text-[#d4ddd4] md:flex">
-            <a href="#about" className="transition hover:text-white">
-              About
-            </a>
-            <a href="#skills" className="transition hover:text-white">
-              Skills
-            </a>
-            <a href="#projects" className="transition hover:text-white">
-              Projects
-            </a>
-            <a href="#contact" className="transition hover:text-white">
-              Contact
-            </a>
+          <div className="hidden items-center gap-7 text-sm font-medium md:flex">
+            <a href="#about" className="nav-link transition">About</a>
+            <a href="#skills" className="nav-link transition">Competencies</a>
+            <a href="#projects" className="nav-link transition">Projects</a>
+            <a href="#contact" className="nav-link transition">Contact</a>
           </div>
           <a
             href="#contact"
             className="theme-outline-btn rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] transition"
           >
-            Hire Me
+            Contact
           </a>
         </nav>
       </header>

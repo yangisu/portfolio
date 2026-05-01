@@ -14,19 +14,19 @@ export function HeroSection({
   experience,
 }: HeroSectionProps) {
   return (
-    <section id="top" className="section-fade relative scroll-mt-20">
-      <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-end">
-        <div>
-          <p className="mb-4 inline-flex items-center rounded-full border border-[#2d4339] bg-[#0f1b16] px-4 py-1.5 font-mono text-xs uppercase tracking-[0.2em] theme-eyebrow">
+    <section id="top" className="section-fade relative scroll-mt-24">
+      <div className="hero-grid grid gap-8 lg:grid-cols-[1.6fr_1fr] lg:items-stretch">
+        <div className="glass-card accent-ring rounded-[28px] p-7 md:p-9">
+          <p className="mb-5 inline-flex items-center rounded-full border border-[#2f4539] bg-[#0d1713] px-4 py-1.5 font-mono text-xs uppercase tracking-[0.2em] theme-eyebrow">
             {role}
           </p>
-          <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
+          <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[var(--ivory)] md:text-6xl">
             {name}
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed theme-text-muted md:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed theme-text-muted md:text-lg">
             {introduction}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-9 flex flex-wrap gap-3">
             <a
               href="#projects"
               className="theme-solid-btn rounded-full px-6 py-3 text-sm font-semibold transition"
@@ -41,18 +41,24 @@ export function HeroSection({
             </a>
           </div>
         </div>
-        <aside className="glass-card accent-ring rounded-3xl p-6">
+
+        <aside className="glass-card rounded-[28px] p-6 md:p-7">
           <p className="font-mono text-xs uppercase tracking-[0.18em] theme-eyebrow">
             Snapshot
           </p>
-          <p className="mt-3 text-sm text-[#d8e1da]">
+          <p className="mt-4 text-sm text-[#d8e1da]">
             Experience: <span className="text-white">{experience}</span>
           </p>
-          <div className="mt-5 flex flex-wrap gap-2">
+
+          <div className="mt-5 space-y-2">
             {stack.map((item) => (
-              <span key={item} className="theme-chip rounded-full px-3 py-1 text-xs">
-                {item}
-              </span>
+              <div
+                key={item}
+                className="flex items-center justify-between rounded-xl border border-[#2e4036] bg-[#0e1713] px-3 py-2"
+              >
+                <span className="text-sm text-[#d9e7de]">{item}</span>
+                <span className="h-1.5 w-1.5 rounded-full bg-[#8bcf9d]" />
+              </div>
             ))}
           </div>
         </aside>
