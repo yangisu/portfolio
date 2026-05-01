@@ -13,7 +13,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "[Your Name] | AI Developer Portfolio",
+  title: "양이수 (Isu Yang) | AI Engineer Portfolio",
   description:
     "AI developer portfolio focused on LLM products, practical engineering, and measurable outcomes.",
 };
